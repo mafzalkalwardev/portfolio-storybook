@@ -1,0 +1,13 @@
+{
+  "name": "Muhammad Afzal Kalwar — Storybook Portfolio",
+  "short_name": "Afzal Story",
+  "description": "A whimsical storybook-style developer portfolio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff8f0",
+  "theme_color": "#f9c5d1",
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

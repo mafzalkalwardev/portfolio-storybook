@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Afzal Kalwar | A Developer's Storybook</title>
+  <meta name="description" content="Muhammad Afzal Kalwar — Full-Stack Developer & Automation Engineer. A whimsical portfolio for readers who love stories and code." />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#f9c5d1" />
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Fredoka:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="reading-ribbon" id="readingRibbon" aria-hidden="true"></div>
+
+  <div class="bg-paper" aria-hidden="true"></div>
+  <div class="bg-blobs" aria-hidden="true">
+    <span class="blob-1"></span>
+    <span class="blob-2"></span>
+    <span class="blob-3"></span>
+    <span class="blob-4"></span>
+  </div>
+  <div class="bg-doodles" aria-hidden="true">
+    <span class="doodle">📖</span>
+    <span class="doodle">✨</span>
+    <span class="doodle">⭐</span>
+    <span class="doodle">📚</span>
+    <span class="doodle">🌸</span>
+  </div>
+
+  <nav class="nav" id="nav">
+    <a class="nav-brand" href="#prologue">
+      <img class="nav-avatar" src="assets/profile.png" alt="" width="40" height="40" />
+      <span class="nav-name">Muhammad Afzal<span>a developer's story</span></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#prologue" class="active">Prologue</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#tales">Tales</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Letter</a></li>
+      <li><a href="assets/Muhammad-Afzal-Kalwar-CV.pdf" class="nav-cta" download="Muhammad-Afzal-Kalwar-CV.pdf">CV</a></li>
+      <li><a href="https://github.com/mafzalkalwardev" class="nav-cta" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Chapter 1: Prologue -->
+    <section class="section" id="prologue">
+      <div class="container hero-layout">
+        <div>
+          <div class="hero-inner reveal-left">
+            <div class="hero-photo-wrap">
+              <img class="hero-photo" src="assets/profile.png" alt="Muhammad Afzal Kalwar" width="120" height="120" />
+              <span class="hero-sticker s1" aria-hidden="true">✨</span>
+              <span class="hero-sticker s2" aria-hidden="true">📖</span>
+            </div>
+            <div class="hero-content">
+              <p class="chapter-label">Chapter 1 · The Prologue</p>
+              <p class="eyebrow">Available for freelance &amp; remote work</p>
+              <h1 data-split>Muhammad Afzal Kalwar</h1>
+              <p class="hero-title-line">Full-Stack Developer &amp; Automation Engineer</p>
+              <p class="hero-lead">
+                B.S. Computer Science graduate from Air University Islamabad. I build web apps, Python desktop software, and automation systems for teams that need production-ready code.
+              </p>
+              <div class="hero-actions">
+                <a href="#tales" class="btn btn-primary btn-lg">Read My Tales</a>
+                <a href="assets/Muhammad-Afzal-Kalwar-CV.pdf" class="btn btn-cv btn-lg" download="Muhammad-Afzal-Kalwar-CV.pdf">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  Download CV
+                </a>
+                <a href="#contact" class="btn btn-secondary btn-lg">Send a Letter</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-meta reveal">
+            <div><strong><span data-count="40" data-suffix="+">0</span></strong><span>Open source repositories</span></div>
+            <div><strong><span data-count="5" data-suffix="+">0</span></strong><span>Years of experience</span></div>
+            <div><strong><span data-count="38">0</span></strong><span>Portfolio projects</span></div>
+            <div><strong>100%</strong><span>Client-focused delivery</span></div>
+          </div>
+        </div>
+
+        <aside class="hero-aside">
+          <div class="book-card story-stat-card reveal-scale delay-1">
+            <h3>Education</h3>
+            <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.5rem">
+              <img src="assets/education/air-university.png" alt="Air University Islamabad" width="44" height="44" style="border-radius:10px;object-fit:contain;background:#fff;padding:2px" />
+              <div>
+                <p class="education-school" style="margin:0;font-size:1rem">Air University, Islamabad</p>
+                <p style="font-size:0.75rem;color:var(--text-muted);margin:0.15rem 0 0">Graduated · B.S. Computer Science</p>
+              </div>
+            </div>
+            <p style="font-size:0.85rem;color:var(--text-secondary);margin:0;line-height:1.55">Algorithms, software engineering, databases, OS &amp; systems programming.</p>
+          </div>
+          <div class="book-card story-stat-card reveal-scale delay-2">
+            <h3>Story Stats</h3>
+            <div class="story-stats">
+              <div class="story-stat"><strong><span data-count="40" data-suffix="+">0</span></strong><span>GitHub repos</span></div>
+              <div class="story-stat"><strong><span data-count="38">0</span></strong><span>Projects shown</span></div>
+              <div class="story-stat"><strong><span data-count="5" data-suffix="+">0</span></strong><span>Years coding</span></div>
+              <div class="story-stat"><strong>Open</strong><span>For new work</span></div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="marquee-section reveal-fade" aria-hidden="true">
+      <div class="marquee-wrap">
+        <div class="marquee-track">
+          <span>Python</span><span>React</span><span>Node.js</span><span>PyQt6</span><span>Playwright</span><span>FastAPI</span><span>Next.js</span><span>Docker</span><span>MongoDB</span><span>TypeScript</span><span>Go</span><span>TensorFlow</span>
+          <span>Python</span><span>React</span><span>Node.js</span><span>PyQt6</span><span>Playwright</span><span>FastAPI</span><span>Next.js</span><span>Docker</span><span>MongoDB</span><span>TypeScript</span><span>Go</span><span>TensorFlow</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 2: About -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="chapter-label">Chapter 2 · The Author's Note</p>
+          <h2 class="section-title">About me</h2>
+          <p class="section-subtitle">Full-Stack Developer &amp; Automation Engineer from Islamabad, Pakistan — building production software for logistics, CRM, email, and AI-powered workflows.</p>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-photo reveal">
+            <img src="assets/profile.png" alt="Muhammad Afzal Kalwar" width="260" height="260" />
+          </div>
+          <div class="about-text reveal-right delay-1">
+            <h2>Who I am</h2>
+            <p>I'm <strong>Muhammad Afzal Kalwar</strong>, a software developer who turns complex business problems into reliable software — auto dialers, CRM platforms, email verification systems, scrapers, and client-facing web apps.</p>
+            <p>I graduated with a <strong>Bachelor of Science in Computer Science from Air University, Islamabad</strong>. My degree covered algorithms, data structures, software engineering, operating systems, databases, and computer networks — the foundation I use every day in full-stack and automation work.</p>
+            <p>I maintain <strong>40+ open source repositories</strong> on GitHub, ship Windows desktop tools with PyQt6, build React/Node.js web apps, and automate workflows with Playwright and Selenium. I'm available for freelance, contract, and full-time remote roles worldwide.</p>
+            <p><strong>Specialties:</strong> Google Voice auto dialers · bulk email verification · Fiverr lead CRM · FMCSA carrier scrapers · call analytics · logistics dispatch websites · AI transcription pipelines.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:0.625rem;margin-top:0.75rem">
+              <a href="#contact" class="btn btn-primary">Send a Letter</a>
+              <a href="assets/Muhammad-Afzal-Kalwar-CV.pdf" class="btn btn-cv" download="Muhammad-Afzal-Kalwar-CV.pdf">Download CV</a>
+              <a href="#tales" class="btn btn-secondary">Read my tales</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-highlights reveal">
+          <div class="about-highlight"><strong>40+</strong><span>GitHub repositories</span></div>
+          <div class="about-highlight"><strong>38</strong><span>Portfolio projects</span></div>
+          <div class="about-highlight"><strong>5+</strong><span>Years coding</span></div>
+        </div>
+
+        <div class="education-card reveal">
+          <img class="education-logo" src="assets/education/air-university.png" alt="Air University Islamabad logo" width="72" height="72" />
+          <div>
+            <span class="education-badge">Graduated</span>
+            <h3>Bachelor of Science in Computer Science</h3>
+            <p class="education-school">Air University, Islamabad, Pakistan</p>
+            <p>Completed my B.S. in Computer Science at Air University Islamabad — a leading aerospace and computing institution in Pakistan. Coursework included algorithms &amp; complexity, object-oriented programming, software engineering, database systems, operating systems, computer networks, and systems programming.</p>
+          </div>
+        </div>
+
+        <div class="section-head reveal" style="margin-top:3rem">
+          <h2 class="section-title">What I deliver</h2>
+          <p class="section-subtitle">End-to-end development across web, desktop, automation, and AI</p>
+        </div>
+        <div class="services-grid stagger-grid reveal">
+          <article class="service-card"><div class="service-num">01</div><h3>Web &amp; SaaS</h3><p>React/Next.js frontends, Node.js APIs, MongoDB/PostgreSQL backends, dashboards, auth, and payment integrations.</p></article>
+          <article class="service-card"><div class="service-num">02</div><h3>Python &amp; desktop</h3><p>PyQt6 Windows apps, FastAPI microservices, Excel automation, multi-threaded pipelines, and internal tools.</p></article>
+          <article class="service-card"><div class="service-num">03</div><h3>Automation &amp; scraping</h3><p>Playwright/Selenium scrapers, FMCSA SAFER extractors, website cloners, and RPA for repetitive ops work.</p></article>
+          <article class="service-card"><div class="service-num">04</div><h3>AI &amp; voice tech</h3><p>Whisper transcription, Groq LLM scripts, call auditing, AMD detection, and ML prototypes with TensorFlow.</p></article>
+        </div>
+
+        <div class="timeline-section">
+          <div class="section-head reveal">
+            <h2 class="section-title">Plot points</h2>
+            <p class="section-subtitle">Experience &amp; education — the chapters so far</p>
+          </div>
+          <div class="timeline reveal">
+            <article class="timeline-item">
+              <span class="timeline-date">Education · Graduated</span>
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-body">
+                <h3>B.S. Computer Science — Air University, Islamabad</h3>
+                <p>Completed Bachelor of Science in Computer Science. Strong foundation in algorithms, software engineering, databases, and systems — applied daily in production projects.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-date">Present</span>
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-body">
+                <h3>Independent developer &amp; FT Solutions</h3>
+                <p>Building open source dialers, email platforms, CRM tools, and client websites. Delivering freelance and contract projects remotely from Islamabad.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-date">Portfolio</span>
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-body">
+                <h3>38+ showcased projects</h3>
+                <p>Auto dialers, bulk email verifiers, Fiverr CRM, FMCSA scrapers, dispatch websites, ML digit recognition, and more — all on GitHub with real screenshots.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-date">Focus areas</span>
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-body">
+                <h3>Logistics &amp; communications tech</h3>
+                <p>Specialized in trucking dispatch automation, Google Voice dialers, carrier data extraction, and email outreach systems for US logistics companies.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 3: Projects -->
+    <section class="section" id="tales">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="chapter-label">Chapter 3 · Tales I've Written</p>
+          <h2 class="section-title">Featured stories</h2>
+          <p class="section-subtitle">Production apps I built — auto dialers, CRM, email platforms, scrapers, and SaaS tools</p>
+        </header>
+        <div class="project-grid featured-grid" id="featuredProjects"></div>
+
+        <header class="section-head reveal" style="margin-top:3rem">
+          <h2 class="section-title">All tales</h2>
+          <p class="section-subtitle">38 projects across web, desktop, automation, scraping, email, and ML</p>
+        </header>
+
+        <div class="filter-bar reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="desktop">Desktop</button>
+          <button class="filter-btn" data-filter="automation">Automation</button>
+          <button class="filter-btn" data-filter="scraper">Scraper</button>
+          <button class="filter-btn" data-filter="email">Email</button>
+          <button class="filter-btn" data-filter="website">Websites</button>
+          <button class="filter-btn" data-filter="ml">ML / AI</button>
+        </div>
+
+        <div class="project-grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <!-- Chapter 4: Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="chapter-label">Chapter 4 · Tools of the Trade</p>
+          <h2 class="section-title">Skills &amp; expertise</h2>
+          <p class="section-subtitle">Production-ready stack built on a B.S. Computer Science foundation from Air University Islamabad</p>
+        </header>
+
+        <div class="skills-detail-grid stagger-grid reveal">
+          <div class="skills-detail-card"><h3>Backend &amp; APIs</h3><ul><li>Python · FastAPI · Flask · Django</li><li>Node.js · Express · REST · GraphQL</li><li>Go · SMTP · WebSockets</li><li>JWT auth · Stripe · webhooks</li></ul></div>
+          <div class="skills-detail-card"><h3>Frontend &amp; UI</h3><ul><li>React · Next.js · TypeScript</li><li>HTML5 · CSS3 · Tailwind · Bootstrap</li><li>PyQt6 desktop UIs · Electron</li><li>Responsive · accessible design</li></ul></div>
+          <div class="skills-detail-card"><h3>Automation &amp; AI</h3><ul><li>Playwright · Selenium · PyAutoGUI</li><li>Whisper · Groq · OpenAI APIs</li><li>TensorFlow · CNN · MNIST ML</li><li>Call analytics · AMD detection</li></ul></div>
+          <div class="skills-detail-card"><h3>Data &amp; DevOps</h3><ul><li>MongoDB · PostgreSQL · SQLite · Redis</li><li>Docker · Jenkins · CI/CD</li><li>AWS · Azure · Firebase · Vercel</li><li>Git · GitHub Actions · Nginx</li></ul></div>
+          <div class="skills-detail-card"><h3>Domain expertise</h3><ul><li>Auto dialers · Google Voice</li><li>Email verification · SMTP campaigns</li><li>FMCSA SAFER · carrier scraping</li><li>Logistics CRM · dispatch websites</li></ul></div>
+          <div class="skills-detail-card"><h3>CS fundamentals</h3><ul><li>Algorithms &amp; data structures</li><li>Software engineering patterns</li><li>Database design &amp; SQL</li><li>OS · networking · concurrency</li></ul></div>
+        </div>
+
+        <div class="skills-grid reveal">
+          <div class="skill-group">
+            <h3>Core languages</h3>
+            <div class="skill-item"><div class="skill-info"><span>Python</span><span>Expert</span></div><div class="skill-bar"><div class="skill-fill" data-width="95"></div></div></div>
+            <div class="skill-item"><div class="skill-info"><span>JavaScript / TypeScript</span><span>Advanced</span></div><div class="skill-bar"><div class="skill-fill" data-width="88"></div></div></div>
+            <div class="skill-item"><div class="skill-info"><span>Go</span><span>Proficient</span></div><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+            <div class="skill-item"><div class="skill-info"><span>C# / .NET</span><span>Proficient</span></div><div class="skill-bar"><div class="skill-fill" data-width="72"></div></div></div>
+          </div>
+          <div class="skill-group">
+            <h3>Frameworks &amp; tools</h3>
+            <div class="skill-item"><div class="skill-info"><span>React / Next.js</span><span>Advanced</span></div><div class="skill-bar"><div class="skill-fill" data-width="86"></div></div></div>
+            <div class="skill-item"><div class="skill-info"><span>Node.js / Express</span><span>Advanced</span></div><div class="skill-bar"><div class="skill-fill" data-width="82"></div></div></div>
+            <div class="skill-item"><div class="skill-info"><span>Playwright / Selenium</span><span>Expert</span></div><div class="skill-bar"><div class="skill-fill" data-width="92"></div></div></div>
+            <div class="skill-item"><div class="skill-info"><span>PyQt6 / Desktop</span><span>Advanced</span></div><div class="skill-bar"><div class="skill-fill" data-width="88"></div></div></div>
+            <div class="skill-item"><div class="skill-info"><span>Docker / DevOps</span><span>Proficient</span></div><div class="skill-bar"><div class="skill-fill" data-width="78"></div></div></div>
+          </div>
+        </div>
+
+        <div class="section-head reveal">
+          <h2 class="section-title">Technologies &amp; tools</h2>
+          <p class="section-subtitle">50+ professional icons — languages, frameworks, cloud, AI, and DevOps</p>
+        </div>
+        <div class="tech-icon-grid stagger-grid reveal" id="techIconGrid"></div>
+      </div>
+    </section>
+
+    <!-- Chapter 5: Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="chapter-label">Chapter 5 · Send a Letter</p>
+          <h2 class="section-title">Get in touch</h2>
+          <p class="section-subtitle">Tell me about your project. I typically respond within 24 hours.</p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-info-panel reveal">
+            <div class="contact-card"><h3>Email</h3><a href="mailto:kalwarmuhammadafzal3@gmail.com">kalwarmuhammadafzal3@gmail.com</a></div>
+            <div class="contact-card"><h3>LinkedIn</h3><a href="https://www.linkedin.com/in/muhammad-afzal-2670b527b/" target="_blank" rel="noopener">Connect on LinkedIn</a></div>
+            <div class="contact-card"><h3>GitHub</h3><a href="https://github.com/mafzalkalwardev" target="_blank" rel="noopener">@mafzalkalwardev</a></div>
+            <div class="contact-card"><h3>Location</h3><p>Islamabad, Pakistan · Remote worldwide</p></div>
+            <div class="status-banner"><strong>Available for new projects</strong><p>Freelance · Contract · Part-time · Full-time remote</p></div>
+            <a href="assets/Muhammad-Afzal-Kalwar-CV.pdf" class="btn btn-cv btn-block" style="margin-top:1rem" download="Muhammad-Afzal-Kalwar-CV.pdf">Download CV (PDF)</a>
+          </div>
+
+          <form
+            class="contact-form reveal delay-1"
+            id="contactForm"
+            action="https://formsubmit.co/kalarmuhammadafzal3@gmail.com"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="New storybook portfolio inquiry" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="true" />
+            <input type="hidden" name="_next" value="" id="formNextUrl" />
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
+            <div class="form-success hidden" id="formSuccess" role="status">
+              Thanks — your letter was sent. I'll reply within 24 hours.
+            </div>
+
+            <h2>Write your message</h2>
+            <label>Name<input type="text" name="name" required placeholder="Your name" /></label>
+            <label>Email<input type="email" name="_replyto" required placeholder="you@email.com" /></label>
+            <label>Project type
+              <select name="project_type">
+                <option>Web Development</option>
+                <option>Python / Desktop App</option>
+                <option>Automation / Scraping</option>
+                <option>AI Integration</option>
+                <option>Other</option>
+              </select>
+            </label>
+            <label>Message<textarea name="message" rows="5" required placeholder="Describe your project, timeline, and budget."></textarea></label>
+            <button type="submit" class="btn btn-primary btn-lg btn-block" id="submitBtn">Send letter</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="https://github.com/mafzalkalwardev" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/muhammad-afzal-2670b527b/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="assets/Muhammad-Afzal-Kalwar-CV.pdf" download="Muhammad-Afzal-Kalwar-CV.pdf">Download CV</a>
+      <a href="mailto:kalwarmuhammadafzal3@gmail.com">Email</a>
+    </div>
+    <p>&copy; <span id="year"></span> Muhammad Afzal Kalwar · The End</p>
+  </footer>
+
+  <script src="js/site.js"></script>
+  <script src="js/projects-data.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/tech-stack.js"></script>
+  <script src="js/motion.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

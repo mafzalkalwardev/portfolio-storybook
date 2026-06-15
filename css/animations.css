@@ -1,0 +1,123 @@
+@keyframes floatDoodle {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(5deg); }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes heroWordIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-word {
+  display: inline-block;
+  animation: heroWordIn 0.6s ease backwards;
+}
+
+/* Scroll reveal */
+.reveal,
+.reveal-left,
+.reveal-right,
+.reveal-scale,
+.reveal-fade,
+.stagger-grid {
+  opacity: 0;
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal { transform: translateY(28px); }
+.reveal-left { transform: translateX(-28px); }
+.reveal-right { transform: translateX(28px); }
+.reveal-scale { transform: scale(0.95); }
+.reveal-fade { transform: none; }
+
+.reveal.visible,
+.reveal-left.visible,
+.reveal-right.visible,
+.reveal-scale.visible,
+.reveal-fade.visible,
+.stagger-grid.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.stagger-grid.visible .project-card,
+.stagger-grid.visible .tech-icon-item,
+.stagger-grid.visible .service-card,
+.stagger-grid.visible .skills-detail-card {
+  animation: staggerIn 0.5s ease backwards;
+}
+
+.stagger-grid.visible .project-card:nth-child(1),
+.stagger-grid.visible .tech-icon-item:nth-child(1),
+.stagger-grid.visible .service-card:nth-child(1) { animation-delay: 0.05s; }
+
+.stagger-grid.visible .project-card:nth-child(2),
+.stagger-grid.visible .tech-icon-item:nth-child(2),
+.stagger-grid.visible .service-card:nth-child(2) { animation-delay: 0.1s; }
+
+.stagger-grid.visible .project-card:nth-child(3),
+.stagger-grid.visible .tech-icon-item:nth-child(3),
+.stagger-grid.visible .service-card:nth-child(3) { animation-delay: 0.15s; }
+
+.stagger-grid.visible .project-card:nth-child(4),
+.stagger-grid.visible .tech-icon-item:nth-child(4) { animation-delay: 0.2s; }
+
+.stagger-grid.visible .project-card:nth-child(5),
+.stagger-grid.visible .tech-icon-item:nth-child(5) { animation-delay: 0.25s; }
+
+.stagger-grid.visible .project-card:nth-child(6),
+.stagger-grid.visible .tech-icon-item:nth-child(6) { animation-delay: 0.3s; }
+
+@keyframes staggerIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+
+/* Bookmark wiggle on card hover */
+.project-card:hover::before {
+  animation: bookmarkWiggle 0.4s ease;
+}
+
+@keyframes bookmarkWiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-3deg); }
+  75% { transform: rotate(3deg); }
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  width: 20px;
+  height: 32px;
+  background: linear-gradient(180deg, var(--butter), #f5d76e);
+  border-radius: 0 0 4px 4px;
+  z-index: 2;
+  box-shadow: 0 2px 4px rgba(74, 55, 40, 0.1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal, .reveal-left, .reveal-right, .reveal-scale, .reveal-fade, .stagger-grid {
+    opacity: 1;
+    transform: none;
+  }
+
+  .marquee-track { animation: none; }
+  .doodle { animation: none; }
+  .hero-sticker { animation: none; }
+}
